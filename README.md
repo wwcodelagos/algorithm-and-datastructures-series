@@ -18,7 +18,7 @@ For each concept, you find the recorded session from the bi-weekly meetup, the s
 You also find solutions to the practice problems solved by others in the community.
 
 
-<b>
+<br>
   
   
 ## **How To Contribute**
