@@ -18,9 +18,19 @@ Slides: [getting started slides](https://github.com/wwcodelagos/algorithm-and-da
 <br>
 
 ## Resources on Time and Space Complexity:
+### Videos
 
-<br>
-<br>
+- [Big O Notation, Gayle Laakmann McDowell](https://youtu.be/v4cd1O4zkGw)
+- [Introduction to Big-O, William Fiset](https://youtu.be/zUUkiEllHG0)
+
+### Articles
+
+- [Asymptotic Notation, Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation)
+- [Big O Notation | Interview Cake](https://www.interviewcake.com/article/java/big-o-notation-time-and-space-complexity)
+- [Coding Interview Cheatsheet. Big O Notation | by Michael Verdi | Medium](https://medium.com/@verdi/coding-interview-cheatsheet-4c0676cd4a5c)
+- [A Beginner’s Guide to Big O Notation- Part 1](https://medium.com/better-programming/a-beginners-guide-to-big-o-notation-pt-1-19ec031b698b)
+- [A Beginner’s Guide to Big O Notation- Part 2](https://medium.com/swlh/a-beginners-guide-to-big-o-notation-part-2-c4ede76cea36)
+
 <br>
 
 
