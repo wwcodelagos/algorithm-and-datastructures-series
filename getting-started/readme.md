@@ -1,4 +1,4 @@
-Getting Started
+# Getting Started
 
 This was a getting started session. Majorly going through what to expect from the series, what you want to achieve from it, how technical interviews work and finally a brief introduction on time and space complexity.
 
