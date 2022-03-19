@@ -1,6 +1,12 @@
 # Quick Overview
 
 <br>
+<br>
+
+[Recorded meetup session]()
+
+[Slides for the session](https://github.com/wwcodelagos/algorithm-and-datastructures-series/blob/main/strings-and-arrays/Strings%20and%20Arrays.pdf)
+
 
 ## Relationship Between Strings and Arrays
 
@@ -34,10 +40,7 @@
     - lists
 - Multidimensional arrays
 
-<br>
-<br>
-
-## Common Operations
+### Common Operations
 
 - Accessing the ith element
 - Finding the index of an element
@@ -54,7 +57,7 @@
 
 When you are preparing for interviews, instead of trying to memorize as many leetcode problems as possible with the hope that you’ll get asked one of those exact questions, you can learn common patterns that can be applied to many different problems.
 
-### ****Using a HashMap or Length-256 Integer Array****
+### Using a HashMap or Length-256 Integer Array
 
 - Counting the occurrence
 - Store for the future
