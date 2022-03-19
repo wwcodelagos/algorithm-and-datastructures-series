@@ -53,8 +53,8 @@ If you are a more advanced coder, we would welcome your help reviewing PRs of co
   
 ## Concepts
 
-[Getting Started & Time and Space Complexity](https://github.com/wwcodelagos/algorithm-and-datastructures-series/tree/main/getting-started#getting-started)
-[Strings & Arrays](https://github.com/wwcodelagos/algorithm-and-datastructures-series/tree/main/strings-and-arrays#quick-overview)
+- [Getting Started & Time and Space Complexity](https://github.com/wwcodelagos/algorithm-and-datastructures-series/tree/main/getting-started#getting-started)
+- [Strings & Arrays](https://github.com/wwcodelagos/algorithm-and-datastructures-series/tree/main/strings-and-arrays#quick-overview)
 
   <br>
   <br>
