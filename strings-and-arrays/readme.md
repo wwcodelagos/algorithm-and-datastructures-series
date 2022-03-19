@@ -114,3 +114,12 @@ Example
 [https://leetcode.com/problems/longest-substring-without-repeating-characters/](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 [https://leetcode.com/problems/circular-array-loop/](https://leetcode.com/problems/circular-array-loop/)
+
+<br>
+<br>
+
+## Resources
+
+- [https://www.crackingthecodinginterview.com/](https://www.crackingthecodinginterview.com/) Arrays and Strings
+- [https://leetcode.com/explore/learn/card/array-and-string/](https://leetcode.com/explore/learn/card/array-and-string/)
+- [https://www.byte-by-byte.com/strings/](https://www.byte-by-byte.com/strings/)
