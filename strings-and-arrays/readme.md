@@ -3,7 +3,7 @@
 <br>
 <br>
 
-[Recorded meetup session]()
+[Recorded meetup session](https://youtu.be/a7JCBxnaVJs)
 
 [Slides for the session](https://github.com/wwcodelagos/algorithm-and-datastructures-series/blob/main/strings-and-arrays/Strings%20and%20Arrays.pdf)
 
