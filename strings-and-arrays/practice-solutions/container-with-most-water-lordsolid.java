@@ -1,5 +1,6 @@
 
-
+//Time complextiy = O(n)
+//Space complexity = O(1)
 
 //Using two pointer approach
 public int maxArea(int[] heights) {
