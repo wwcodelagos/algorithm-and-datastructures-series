@@ -55,6 +55,7 @@ If you are a more advanced coder, we would welcome your help reviewing PRs of co
 
 - [Getting Started & Time and Space Complexity](https://github.com/wwcodelagos/algorithm-and-datastructures-series/tree/main/getting-started#getting-started)
 - [Strings & Arrays](https://github.com/wwcodelagos/algorithm-and-datastructures-series/tree/main/strings-and-arrays#quick-overview)
+- [Hash Tables](https://github.com/wwcodelagos/algorithm-and-datastructures-series/tree/main/hash-tables#quick-overview)
 
   <br>
   <br>
