@@ -4,6 +4,10 @@
 
 <br>
 
+[Recorded meetup session]()
+
+<br>
+
 ## What are Hash Tables
 
 - Hash Table is a data structure which maps a key to a value using hash functions through a process called hashing.
