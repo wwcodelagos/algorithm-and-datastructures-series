@@ -6,7 +6,11 @@ var reverseString = function(s) {
     temp = s.pop(s[i])
     reversedArray.push(temp)
   }
-  console.log(reversedArray)
+  console.log(reversedArray);
+
+  let start = 0;
+  let end = reversedArray.length - 1;
+  reversed(reversedArray, start, end)
 }
 
 //Optimized solution using two-pointer approach
@@ -21,7 +25,7 @@ function reversed(arr, start, end) {
     
   start++;
   end--
-  //reversed(arr, start, end)
+  reversed(arr, start, end)
   console.log(arr);
 }
 //reverseString(['t', 'i', 'm', 'e'])
