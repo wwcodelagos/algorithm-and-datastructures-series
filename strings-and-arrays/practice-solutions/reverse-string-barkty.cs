@@ -1,13 +1,19 @@
-﻿public class Solution 
+public class Solution 
 {
   public void ReverseString(char[] s)
   {
-    char temp;
-    char[] array;
-    foreach(char character in s) {
-      temp = s.Pop(s[character]);
-      array.Push(temp);
+    int start = 0;
+    int end = s.Length;
+    int length = s.Length - 1;
+    for(int i = 0; i < length / 2; i++) {
+      if(start == s.Length / 2)
+      var temp = s[start];
+      s[start] = arr[end];
+      s[end] = temp;
+      
+      start++;
+      end--
     };
-    Console.WriteLine(array);
+    Console.WriteLine(s);
   }
 }
