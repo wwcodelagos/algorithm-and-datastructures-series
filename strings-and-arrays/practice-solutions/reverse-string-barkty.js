@@ -10,7 +10,7 @@ var reverseString = function(s) {
 }
 
 //Optimized solution using two-pointer approach
-function reversed(arr, start) {
+function reversed(arr, start, end) {
   let end = arr.length - 1;
   let len = arr.length - 1;
   for (let i = 0; i < len / 2; i++) {
