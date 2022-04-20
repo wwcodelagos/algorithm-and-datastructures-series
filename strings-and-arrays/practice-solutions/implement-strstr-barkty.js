@@ -7,10 +7,9 @@ var strStr = function(haystack, needle) {
         let index = haystack.indexOf(needle)
         console.log(index)
         return index;
-    } else if(!haystack.includes(needle)) {
-        console.log(-1);
-        return -1;
-    }
+    } 
+    console.log(-1);
+    //return -1;
 
     //Optimized
     //Time Complexity O(n)
