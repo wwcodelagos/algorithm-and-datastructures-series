@@ -1,0 +1,72 @@
+# python 
+dict or {}
+records = dict()
+records = {}
+
+# C#
+records = new Dictionary()
+
+# java
+HashMap()
+records = new HashMap()
+
+# javascript
+records = new Object()
+records = {}
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    	seen = {}
+      
+      for j in range(len(nums)):
+        difference = target - nums[j]
+        
+        if(difference in seen):
+          return [seen[difference], j]
+          
+      	seen[difference] = j
+
+  
+  # two for-loops - python
+  nums = [2,7,11,15]
+  target = 9
+  len(nums) = 4
+  
+  range(start, end, increment) start, start+increment ..... end-1
+  range(end) -> start = 0, increment = 1
+  
+  range(4) -> 0,1,2,3
+  
+  i = 0
+  a = nums[i] = 2
+  j = 1
+  b = 7
+  
+  a + b = 2 + 7 = 9
+  
+  [i,j] = [0, 1]
+  
+  for i in range(len(nums)):
+  	a = nums[i]
+    for j in range(i + 1, len(nums)):
+    	b = nums[j]
+      if a + b == target:
+      	return [i,j]
+
+
+class Solution:
+    def findLucky(self, arr: List[int]) -> int:
+        for i in range(len(arr)):
+            count = 1
+            value = arr[i]
+            for j in range(i+1,len(arr)):
+                if value == arr[j]:
+                    count = count + 1
+            if count == value:
+                return value
+        return -1
+
+   
+   
+    
+      
