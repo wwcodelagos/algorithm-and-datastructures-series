@@ -71,17 +71,12 @@ z
 }
 
 [a,b,c,d,e,f,g,h,i,j,k,l, m,n,o,p,q,r,s,t,u,v,w]
-[1…………………1……………………………………………………1……………………… 2]
-Key ->a1e1t2 
-
-
-
+[1…………………1……………………………………………………1……………………… 1]
+Key ->a1e1t1 
 
 
 
 Finding a more optimal way to create the keys without sorting
-
-
 
 
 For the word in array -> 
