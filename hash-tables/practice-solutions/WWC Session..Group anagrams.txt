@@ -1,0 +1,96 @@
+﻿Group Anagrams - LeetCode
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+ 
+Example 1:
+Input: strs = ["eat","tea",”tea”,"tan","ate","nat","bat"] -> [1,2,3,4] -> O(N =4)-> 1 x 3 -> N x K - O(NK)
+Output: [["bat"],["nat","tan"],["ate","eat","tea", “tea”]]
+
+Eat > e1a1t1
+
+
+Example 2:
+Input: strs = [""]
+Output: [[""]]
+
+
+Example 3:
+Input: strs = ["a", “b”, ab, ba]
+Output: [["a"], [“b”], [ab, ba]]
+
+
+ To sort each word -> O(K * LogK) 
+
+(Constant RT)O(1) -> (Linear RT)O(N) -> O(KN) -> (With sorting - Logarithmic RT)O(KLogK* N)  -> O( K*N*N -1)....
+->
+Constraints:
+* 1 <= strs.length <= 104
+* 0 <= strs[i].length <= 100
+* strs[i] consists of lowercase English letters.
+
+
+—--------------------------------
+
+
+
+
+
+
+
+~, 
+Input: strs = [“ananan”, “annna”, “ana”, “naa”, “bna”]
+
+Output str = [[ana, naa], [ananan], [annna], [bna]]
+
+
+—---
+
+Input: strs = ["eat",“eatt”,"tea",”tea”,"tan","ate","nat","bat"]
+
+Dict = [ eat -> aet, tea -> aet]
+{
+        “aet”: [eat, ]
+        “Abt”: [bat]
+        “Ant”: [nat, tan]
+
+}
+Return Dict.values()
+[...]-> [["bat"],["nat","tan"],["ate","eat","tea", “tea”]]
+
+—---------------
+[a,b……z] -26
+a1e1t1
+
+Dict{
+A -> 1
+.
+E -> 1
+.
+T -> 1
+z
+}
+
+[a,b,c,d,e,f,g,h,i,j,k,l, m,n,o,p,q,r,s,t,u,v,w]
+[1…………………1……………………………………………………1……………………… 2]
+Key ->a1e1t2 
+
+
+
+
+
+
+Finding a more optimal way to create the keys without sorting
+
+
+
+
+For the word in array -> 
+Fn::GetKey(word) -> K+26 
+        Dict = {a:, b:0,...z:0}
+        Str = ‘’
+        For k in word: //O(K)
+                Dict[k]++
+        For char in Dict.keys() //O(26)
+                If(Dict[char]>0):
+                        Str = char + Dict[char]
+        Return str
