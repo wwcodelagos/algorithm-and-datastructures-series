@@ -1,0 +1,79 @@
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+Example 1:
+
+Input: nums = [3,2,15,7], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+Example 2:
+
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
+Example 3:
+
+Input: nums = [3,3], target = 6
+Output: [0,1]
+
+
+//sophia
+//python
+class Solution:
+	def twoSum(self,nums,target):
+  	numbers = {}
+    	for i in range(len(nums)):
+      	match = target - nums[i]
+        if match in numbers:
+        	return [i, numbers[match]]
+        numbers[nums[i]] = i
+
+input = [1,2,3,4]
+target = 5
+output = [1,2]
+time= O(n)
+space = O(n)
+
+
+
+
+
+
+// Dimeji
+For x,y in nums;
+	if x + y = target,
+  	index = nums.index(x,y)    
+Print (index)
+    
+
+  	
+
+
+//Hope Chijuka brute force solution
+public int[] findSum(int[] array, int target) { //3,2,15,7
+	for(int i = 0; i < array.length; i++) {
+  	for(int j = i+1; i < array.length; j++) {
+    	if(array[i] + array[j] == target) return new int[] {i, j};
+    }
+  }
+  return new int[0];
+}
+public int[] findSumII(int[] array, int target) {
+	HashSet set = new HashSet();
+  for(int i = 0; i < array.length; i++) {
+  	set.add(array[i]);
+    if(set.contains(target - array[i]))
+    	return new int[] {set.get(target - array[i]), i};
+  }
+  return new int[0];
+}
+
+
+
+// Moses
+
+def calc(nums, tar):
+    for 
+    
