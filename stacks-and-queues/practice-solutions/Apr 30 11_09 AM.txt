@@ -1,0 +1,48 @@
+class Solution {
+
+"3+2*2" -> stack: 3, 4
+public int calculate(String s) {
+      Stack<Integer> stack = new Stack<>();
+      
+      int currNum = 0;
+      char oprand = '+';
+      
+      for(int i = 0; i < s.length(); i++){
+      
+      	 Character ch = s.charAt(i);
+      
+      	 if (Character.isDigit(ch)) {
+         		currNum = Integer.parseInt(ch.toString());
+         }
+        
+         if((!ch.isDigit() && ch != ' ') || i != s.length() - 1) {
+         	   if(oprand == '+'){
+                stack.push(currNum);
+             }else if(oprand == '-'){
+                stack.push(-1 * currNum);
+             }else if(oprand == '*'){
+                   int y = stack.pop()
+                   int x = currNum;
+                   stack.push(y * x);
+                }
+             else if(oprand == '/'){
+                   int y = stack.pop()
+                   int x = currNum;
+                   stack.push(y / x);
+             }
+             
+             operand = ch;
+             currentNumber = 0;
+             
+             
+         } 
+      }
+      
+      int res = 0;
+      while(!stack.isEmpty()){
+         res += stack.pop();
+      }
+      
+      return res;
+  }
+}

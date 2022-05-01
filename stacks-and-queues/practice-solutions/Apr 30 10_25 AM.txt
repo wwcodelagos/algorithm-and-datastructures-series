@@ -1,0 +1,268 @@
+1, 3, 4, 5, 2
+stack = [1,3,4,5,2]
+stack.push(1)
+stack.push(3)
+....
+
+stack.pop()
+return 2
+stack = [1,3,4,5]
+
+stack.top()
+return 5
+stack = [1,3,4,5]
+
+def __init__(self):
+ # initialize a list
+ self.stack = []
+ 
+def push(self, x: int) -> None:
+ self.stack.append(x)
+ 
+def pop(self) -> int:
+	return stack.pop()
+
+def top(self) -> int:
+	return self.stack[-1]
+
+def empty(self) -> bool:
+ return len(self.stack) == 0;
+ 
+ 
+ 
+ 
+ PHP --> Desmond
+ 
+ class MyStack {
+    /**
+     */
+    
+    Private $list 
+    
+    function __construct() {
+        $this->list = [];
+    }
+  
+    /**
+     * @param Integer $x
+     * @return NULL
+     */
+    function push($x) {
+        $this->list[] = $x;
+    }
+  
+    /**
+     * @return Integer
+     */
+    function pop() {
+        $this->list = array_pop($this->list);
+        return $this->list;
+    }
+  
+    /**
+     * @return Integer
+     */
+    function top() {
+        return end($this->list);
+    }
+  
+    /**
+     * @return Boolean
+     */
+    function empty() {
+        if($this->list){
+        return false;
+        }
+        return true;
+    }
+}
+
+/**
+ * Your MyStack object will be instantiated and called as such:
+ * $obj = MyStack();
+ * $obj->push($x);
+ * $ret_2 = $obj->pop();
+ * $ret_3 = $obj->top();
+ * $ret_4 = $obj->empty();
+ */
+ 
+ 
+ 
+ 
+ Moses: --> Python
+ class MyStack:
+
+    def __init__(self):
+        self.stack = list()
+
+    def push(self, x: int) -> None:
+        self.stack.append(x)
+
+    def pop(self) -> int:
+        if len(self.stack) > 0:
+            return self.stack.pop()
+        else:
+            return None
+        
+
+    def top(self) -> int:
+        if len(self.stack) > 0:
+            return self.stack[len(self.stack)-1]
+        
+
+    def empty(self) -> bool:
+        return self.stack == 0
+    
+    
+    
+Javascript: -- Tosin
+
+var MyStack = function() {
+    stack = []
+};
+
+MyStack.prototype.push = function(x) {
+    stack.push(x)
+};
+
+MyStack.prototype.pop = function() {
+    if(stack.length == 0) {
+    return null
+    }
+    stack.pop()
+};
+
+MyStack.prototype.top = function() {
+    if(!stack.length == 0 ) {
+    return stack.length-1
+    }
+    return null   
+};
+
+MyStack.prototype.empty = function() {
+    if(stack.length == 0) {
+    return true
+    }
+    return false
+};
+
+       
+       
+       
+       Gbemisola ---- C# //Not sure it's correct. I am attemting a linked list
+ public class Node<T>
+
+    {
+
+        public T Value {get; set;}  
+        public Node<T> Next {get; set;}
+        public Node(T value)
+
+        {
+
+        	this.Value = value;
+
+        }
+
+    }
+    
+    public  class Stack<T> 
+    {
+    		public Node<T> Head  {get; set;}
+        public Node<T> Tail {get; set;}
+        public int Count {get; set;}
+
+        public StackNode<G> Push(G value)
+
+        {
+
+        	Node<G> node = new Node<G>(value);
+
+        	if(this.Head == null)
+
+        	{
+
+        		Head = Tail = node;
+        		this.Count += 1;
+        		return node;
+
+        	}
+
+        	var temp = Head;
+          Head = node
+        	Head.Next = node;
+        	this.Count += 1;
+        	return node;
+
+        }
+        
+        public StackNode<G> Pop(G value)
+
+        {
+        	Node<G> temp = Head;
+        	this.Head = temp.Next;
+        	temp.Next = null;
+        	this.Count -= 1;
+        	return temp;
+
+        } 
+        
+        public bool Empty()
+        {
+        	if (this.Count == 0)
+          {
+          	return true;
+          }
+          return false;
+        }
+    
+    }
+ 
+ ******************** Valid Parentheses ********************
+ stack=['(',')','{','}']
+ s="(){}"
+ 
+ (){}
+ 01
+ 
+ 
+ }3
+ {2
+ )1
+ (0
+ 
+ # for loop to iterate through the items
+ 	# push items into the stack 
+  # check if the item is direct opposite of the top of stack
+  
+  stack = []
+  parentheses = {"{":"}", "(":")", "[":"]"}
+  # another check you can do here: if len(s) is not even, return false
+  if len(s) % 2 != 0:
+  	return False
+    
+  for i in range(len(s)):
+  	c = s[i]
+ 		if c in parenthesis:
+    	stack.append(c)
+      
+    elif len(stack) and parentheses[stack[-1]] == c:
+    	stack.pop()
+      
+    else:
+    	return False
+      
+  return len(stack) == 0
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
