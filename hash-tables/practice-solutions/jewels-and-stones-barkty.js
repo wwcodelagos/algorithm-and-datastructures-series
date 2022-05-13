@@ -20,7 +20,7 @@ var numJewelsInStones = function(jewels, stones) {
         if(!stoneHash[element] || stoneHash[element] === 0) {
             stoneHash[element] = 1
         }
-        stoneHash[element]++
+        stoneHash[element] = stoneHash[element] ++
     });
 
     console.log(stoneHash)
