@@ -1,6 +1,8 @@
-var intersect = function(nums1, nums2) {
+//Brute force
+
+var intersection = function(nums1, nums2) {
     const obj = {}
-    const result =[]
+    const result = []
 
     //Convert array to hashtable
     for(let i = 0; i < nums1.length; i++) {
@@ -20,8 +22,15 @@ var intersect = function(nums1, nums2) {
                 }
             }
         }
+        for (let x = 0; x < result.length; x++) {
+            for (var j = 0; j < result.length; j++) {
+                if (x != j) {
+                    if(result[x] == result[j]) {
+                        result.pop(x)
+                    }
+                }
+            }
+        }
     }
-    console.log(result)
+    return result;
 };
-
-intersect()
