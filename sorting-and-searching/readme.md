@@ -1,12 +1,12 @@
 # Quick Overview
 
-<br>
+
 <br>
 
 [Recorded meetup session]()
 
 <br>
-<br>
+
 
 ## Common Sorting Algorithms
 
