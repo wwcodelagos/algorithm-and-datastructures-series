@@ -3,6 +3,11 @@
 <br>
 <br>
 
+[Recorded meetup session]()
+
+<br>
+<br>
+
 ## Common Sorting Algorithms
 
 - Bubble sort: swapping until list is sorted
@@ -51,6 +56,8 @@
 [https://leetcode.com/problems/first-bad-version/](https://leetcode.com/problems/first-bad-version/)
 
 [https://leetcode.com/problems/remove-duplicates-from-sorted-array/](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+
+<br>
 
 ### Intermediate
 
