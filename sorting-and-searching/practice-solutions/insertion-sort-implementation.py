@@ -1,9 +1,6 @@
 # Time complexity(Average and Worst case) = 0(n^2)
 # Time Complexity(Best case) = 0(n) : When the array to be sorted is already sorted 
 
-from unittest import result
-
-
 def insertion_sort(array):
     
     n = len(array)
