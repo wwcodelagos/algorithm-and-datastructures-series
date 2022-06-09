@@ -3,7 +3,7 @@
 
 <br>
 
-[Recorded meetup session]()
+[Recorded meetup session](https://www.youtube.com/watch?v=_3YcJKwU9Ik)
 
 <br>
 
