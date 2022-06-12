@@ -57,6 +57,7 @@ If you are a more advanced coder, we would welcome your help reviewing PRs of co
 - [Strings & Arrays](https://github.com/wwcodelagos/algorithm-and-datastructures-series/tree/main/strings-and-arrays#quick-overview)
 - [Hash Tables](https://github.com/wwcodelagos/algorithm-and-datastructures-series/tree/main/hash-tables#quick-overview)
 - [Stacks & Queues](https://github.com/wwcodelagos/algorithm-and-datastructures-series/tree/main/stacks-and-queues#quick-overview)
+- [Sorting & Searching](https://github.com/wwcodelagos/algorithm-and-datastructures-series/tree/main/sorting-and-searching#quick-overview)
 
   <br>
   <br>
