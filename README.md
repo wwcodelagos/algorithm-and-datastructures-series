@@ -46,6 +46,7 @@ If you are a more advanced coder, we would welcome your help reviewing PRs of co
 - [Wikiversity Data Structures and Algorithms](https://en.wikiversity.org/wiki/Data_Structures_and_Algorithms)
 - [https://leetcode.com/explore/interview/card/top-interview-questions-easy/](https://leetcode.com/explore/interview/card/top-interview-questions-easy/)
 - [The HackerRank Interview Preparation Kit | HackerRank](https://www.hackerrank.com/interview/interview-preparation-kit)
+- [Coding interview study plan](https://www.techinterviewhandbook.org/coding-interview-study-plan/)
 
   
   <br>
