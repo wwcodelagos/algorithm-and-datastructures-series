@@ -1,0 +1,102 @@
+Hi everyone!
+
+Here is an example code of using memoization in Python
+
+class Solution:
+    def __init__(self):
+        self.mem = {}
+    def tribonacci(self, n: int) -> int:
+        return self.compute(n)
+    
+    def compute(self, n):
+        if n in self.mem:
+            return self.mem[n]
+        
+        if n == 0:
+            self.mem[n] = 0
+        elif n <= 2:
+            self.mem[n] = 1
+        else:
+            self.mem[n] = self.compute(n-1) + self.compute(n-2) + self.compute(n-3)
+            
+        return self.mem[n]
+    
+THANKS EVERYONE FOR JOINING! SEE YOU IN 2 WEEKS TIME
+
+
+
+i
+
+
+Gbemisola's solution
+First, check if the argument is 0 or 1
+Second create a variable to store the result
+Third, loop through the argument and return the result
+
+function tribonacci(n) {
+	if(n === 0) return 0
+  if(n === 1 || n === 2) return 1
+  
+  let result = 0
+  for (let i = 0; i < n; i++) {
+  
+  		// --- I think I am stuck here
+  	result += (i + (n-1) + (n - 2) + (n - 3))
+  }
+  return result
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+Modupe's Solution
+First I could create an array and put in the t0 till t3 i.e [T1, T2, T3]
+then I will compute for The remaining numbers up till Tn
+so something like 
+Code:
+const newArray = [0,1,1]
+
+for (let i = 3; i <= n; i++){
+newArray[i] = newArray[i-1] + newArray[i-2] + newArray[i-3]
+or better still
+newArray.push(newArray[i-1] + newArray[i-2] + newArray[i-3])
+}
+
+return newArray[n]
+
+
+
+
+
+
+
+
+
+
+//Damilola Solution with Iteration
+
+Since the Size can be determined i will use an Array Data Structure
+Then i would use for loop to iterate through the arrays
+My third step if
+   
+    if (n===0)
+        return o
+        if(n===1 or n===2) return 1
+        else
+          Add the first three numbers
+          
+          Then return result
+        
+        
+        Time Complexity: O(n)
+          
+            
