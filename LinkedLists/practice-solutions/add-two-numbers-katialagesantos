@@ -1,0 +1,61 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode listResult = null;
+	    ListNode lastResultNode=null,newResultNode=null;
+		int carry=0;
+		ListNode nextList1=l1;
+		ListNode nextList2=l2;
+
+		while(nextList1 !=null || nextList2!=null){
+			int valueList1=nextList1==null?0:nextList1.val;
+			int valueList2=nextList2==null?0:nextList2.val;
+
+			int sum=carry+ valueList1 + valueList2;
+			int unitDigit = sum;
+			if(sum>9){
+				char[] digits = String.valueOf(sum).toCharArray();
+				carry=Character.getNumericValue(digits[0]);
+				unitDigit = Character.getNumericValue(digits[1]);
+			}else{
+				carry=0;
+			}
+
+			newResultNode = new ListNode(unitDigit);
+			if(listResult==null) {
+				listResult = newResultNode;
+			}else {
+				insertValueAtEndOfList(lastResultNode,newResultNode);
+			}
+			lastResultNode = newResultNode;
+
+			nextList1=nextList1==null?null:nextList1.next;
+			nextList2=nextList2==null?null:nextList2.next;
+		}
+        
+        if(carry!=0){
+            newResultNode = new ListNode(carry);
+            insertValueAtEndOfList(lastResultNode,newResultNode);
+        }
+
+		return listResult;
+    }
+    
+    private void insertValueAtEndOfList(ListNode lastNode, ListNode newNode){
+		if(lastNode==null){
+			lastNode = newNode;
+		}else {
+			lastNode.next = newNode;
+		}
+	}
+    
+}
