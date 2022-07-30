@@ -1,17 +1,4 @@
-## What are LinkedLists
 
-<br>
-<br>
-
-## Types of LinkedLists
-
-<br>
-<br>
-
-## Things to Note
-
-<br>
-<br>
 
 ## Practice Questions
 
